@@ -1,0 +1,49 @@
+name: "IFIDC ORG"
+title: "IFIDC ORG"
+description: "Indian Farmer Integrated Development Co-operative Organization is a wing of SRI Associations. As name indicates work for Farmers and Agriculture."
+meta_description: "Indian Farmer Integrated Development Co-operative Organization is a wing of SRI Associations. As name indicates work for Farmers and Agriculture."
+logo: 'assets/img/logo.jpg'
+favicon: 'assets/img/favicon.png'
+paginate: 12
+baseurl: ''
+url: 'http://ifidc.org/'
+email: 'support@ifidcmail.com'
+locale: en_US
+seo:
+  keywords: 'ifidc, kid after school, After school, Online Teacher for Kids, Tutor for kids'
+  site_name: ifidc
+og:
+  type: "website"
+event:
+  show_event_image: 'false'
+  event_image_url: '/assets/svg/illustrations/Merry christmas.jpg'
+  event_title:
+
+plugins: 
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+        
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
